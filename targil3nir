@@ -1,0 +1,26 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int a= Convert.ToInt32(Console.ReadLine());
+		 
+		if ( a < 0)
+		{
+		Console.WriteLine( " the number is negative");
+		}
+		 if ( a > 100)
+		 {
+		Console.WriteLine( " the number is bigger then 100");
+		 }
+		 if ( a % 2 ==0)	
+		{
+		Console.WriteLine( " the number is zugi");
+		 }
+		if ( a % 2 != 0)
+		{
+		Console.WriteLine( " the number is E-zugi");
+		}
+	}
+}
