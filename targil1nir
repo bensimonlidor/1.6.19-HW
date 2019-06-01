@@ -5,28 +5,35 @@ public class Program
 	public static void Main()
 	{
 		int a , b;
-	    a = Convert.ToInt32(Console.ReadLine());
+		char z;
+		
+		Console.WriteLine( "enter the first number");
+		a = Convert.ToInt32(Console.ReadLine());
+		
+		Console.WriteLine( "select: +,-,/,*");
+		z = Convert.ToChar(Console.ReadLine());
+		
+		Console.WriteLine( "enter the second number");
 	    b= Convert.ToInt32(Console.ReadLine());
-		
-		int sum=0;
-		int mul;
-		float div;
-		int sub;
-		
-
-		if (a > b)
+	
+		if ( z== '+')
 		{
-	Console.WriteLine( "print sub: ");
-	   Console.WriteLine (	sub = a-b) ;
+	Console.WriteLine( "the sum is:" + (a+b));
 		}
-		else
+		if ( z== '-')
 		{
-		Console.WriteLine(sum= a+b);
-	    Console.WriteLine("sum" );
-	    Console.WriteLine(mul= a*b);
-		Console.WriteLine(" mul" );
-		Console.WriteLine (	div= a/b);
-	    Console.WriteLine(" div" );
+	Console.WriteLine( "the sum is:" + (a-b));
 		}
+		if ( z== '/')
+		{
+	Console.WriteLine( "the sum is:" + (a/b));
+		}
+		if ( z== '*' )
+		{
+	Console.WriteLine( "the sum is:" + (a*b));
+		}
+			
 	}
 }
+
+	
