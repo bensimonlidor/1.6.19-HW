@@ -1,0 +1,35 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int secondsT = Convert.ToInt32(Console.ReadLine());
+           
+        if(secondsT >= 0)
+            {
+                Console.WriteLine("secondsT is value");
+            }
+        else
+            {
+                Console.WriteLine("error");
+            }
+
+            int days = secondsT/ (60 * 60 * 24);
+            secondsT = secondsT % (60 * 60 * 24);
+
+            int hours = secondsT / (60*60);
+            secondsT = secondsT % (60*60);
+
+            int minutes = secondsT / 60;
+            secondsT = secondsT % 60;
+
+            int seconds = secondsT / 1;
+            secondsT = secondsT % 1;
+
+            Console.WriteLine(days);
+            Console.WriteLine(hours);
+            Console.WriteLine(minutes);
+            Console.WriteLine(seconds);
+		}
+}
