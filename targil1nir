@@ -1,0 +1,32 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int a , b;
+	    a = Convert.ToInt32(Console.ReadLine());
+	    b= Convert.ToInt32(Console.ReadLine());
+		
+		int sum=0;
+		int mul;
+		float div;
+		int sub;
+		
+
+		if (a > b)
+		{
+	Console.WriteLine( "print sub: ");
+	   Console.WriteLine (	sub = a-b) ;
+		}
+		else
+		{
+		Console.WriteLine(sum= a+b);
+	    Console.WriteLine("sum" );
+	    Console.WriteLine(mul= a*b);
+		Console.WriteLine(" mul" );
+		Console.WriteLine (	div= a/b);
+	    Console.WriteLine(" div" );
+		}
+	}
+}
